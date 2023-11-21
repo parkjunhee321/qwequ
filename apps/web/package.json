@@ -31,7 +31,6 @@
     "vite-dts": "^1.0.4"
   },
   "devDependencies": {
-    "viteconfig": "workspace:*",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
