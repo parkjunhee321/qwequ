@@ -1,8 +1,6 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/login";
-
-const CoreApp = React.lazy(() => import("@admin/core"));
+import CoreApp from "@admin/core";
 
 function App() {
   return (
