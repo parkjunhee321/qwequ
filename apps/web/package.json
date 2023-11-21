@@ -1,29 +1,42 @@
 {
-  "name": "core",
+  "name": "@admin/core",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/App.cjs",
+  "types": "dist/App.d.ts",
+  "module": "dist/App.js",
+  "exports": {
+    ".": {
+      "development": "./src/App.tsx",
+      "require": "./dist/App.cjs",
+      "import": "./dist/App.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "tsc"
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "globalviteconfig": "workspace:*",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "vite-dts": "^1.0.4"
   },
   "devDependencies": {
+    "viteconfig": "workspace:*",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.4",
-    "vite": "^4.0.3"
+    "vite": "^4.0.3",
+    "vite-plugin-dts": "^3.6.3"
   }
 }
