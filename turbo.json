@@ -1,23 +1,18 @@
 {
-  "$schema": "https://turbo.build/schema.json",
+  "baseBranch": "origin/primary",
   "pipeline": {
     "build": {
-      "env": ["CI"],
-      "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
-    "build:app": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^build"]
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
     },
-    "lint": {},
+    "lint": {
+      "outputs": []
+    },
     "dev": {
-      "cache": false,
-      "persistent": true
-    },
-    "clean": {
       "cache": false
-    },
-    "deploy": {}
+    }
   }
 }
