@@ -1,8 +1,8 @@
 {
   "name": "globalviteconfig",
-  "main": "index.ts",
+  "main": "index.js",
   "type": "module",
-  "types": "index.ts",
+  "types": "index.js",
   "dependencies": {
     "@types/node": "^20.9.0",
     "vite": "^4.0.3"
