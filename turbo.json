@@ -1,6 +1,9 @@
 {
   "baseBranch": "origin/primary",
   "pipeline": {
+    "generate": {
+      "outputs": ["dist/**"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["apps/*/dist", "packages/**"]

@@ -10,10 +10,11 @@ export default defineConfig(() => {
   return {
     plugins: [
       dts({
-        outDir: "dist",
+        outDir: "./dist",
       }),
     ],
     build: {
+      outDir: "./dist",
       lib: {
         // Could also be a dictionary or array of multiple entry points.
         entry: resolve(__dirname, "src/App.tsx"),
