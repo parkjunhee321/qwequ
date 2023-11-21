@@ -2,7 +2,8 @@
   "baseBranch": "origin/primary",
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "packages/**"]
     },
     "test": {
       "dependsOn": ["^build"],
