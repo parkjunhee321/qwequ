@@ -2,14 +2,13 @@ import React, { ReactNode, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/login";
 import MainPage from "./pages/main";
-
-const CoreApp = React.lazy(() => import("@admin/core"));
+import Home from "@admin/core";
 
 //v6에서는 exact -> *
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<CoreApp />} />
+      <Route path="/home" element={<Home />} />
 
       <Route path="/test" element={<LoginPage />} />
 
