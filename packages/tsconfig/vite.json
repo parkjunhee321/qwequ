@@ -17,6 +17,9 @@
     "emitDeclarationOnly": true,
     "jsx": "react"
   },
+  "ts-node": {
+    "esm": true
+  },
   "exclude": [
     "*.config.js",
     "packages/**/node_modules/*.d.ts",
